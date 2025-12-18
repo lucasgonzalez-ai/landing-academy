@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Barbería Profesional | De Cero a Experto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        retroTeal: '#309898',
+                        retroYellow: '#FF9F00',
+                        retroOrange: '#F4631E',
+                        retroRed: '#CB0404',
+                        retroDark: '#1a1a1a',
+                        retroLight: '#f4f1ea',
+                    },
+                    fontFamily: {
+                        'display': ['Alfa Slab One', 'cursive'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'retro': '5px 5px 0px 0px rgba(0,0,0,1)',
+                        'retro-hover': '2px 2px 0px 0px rgba(0,0,0,1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f4f1ea;
+            background-image: radial-gradient(#309898 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 0px #000;
+        }
+        .clip-path-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+<body class="font-body text-retroDark overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="bg-retroDark text-white border-b-4 border-black fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-display tracking-wider text-retroYellow">
+                <i class="fas fa-cut mr-2"></i> LUKAS NAHUEL BARBER ACADEMY
+            </div>
+            <div class="hidden md:flex space-x-8 font-bold uppercase text-sm">
+                <a href="#metodologia" class="hover:text-retroTeal transition">Metodología</a>
+                <a href="#temario" class="hover:text-retroTeal transition">Temario</a>
+                <a href="#inversion" class="hover:text-retroTeal transition">Precios</a>
+            </div>
+            <a href="#inversion" class="bg-retroOrange hover:bg-retroYellow text-black font-bold py-2 px-4 border-2 border-black shadow-retro hover:shadow-retro-hover transition-all transform active:translate-y-1">
+                INSCRIBIRME
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 bg-retroTeal border-b-4 border-black clip-path-slant">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 z-10">
+                <span class="bg-retroRed text-white px-4 py-1 font-bold text-sm border-2 border-black inline-block mb-4 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+                    ¡ÚNICO CUPO DEL 2026!
+                </span>
+                <h1 class="text-5xl md:text-7xl font-display text-white mb-6 leading-tight text-shadow">
+                    APRENDE LOS <span class="text-retroYellow">FUNDAMENTOS</span> EN 2 MESES
+                </h1>
+                <p class="text-xl text-white font-bold mb-8 bg-black inline-block px-2 py-1 transform -rotate-1">
+                    Convertite en Barbero. CURSO 99% Práctico.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#inversion" class="bg-retroYellow hover:bg-retroOrange text-black text-xl font-black py-4 px-8 border-4 border-black shadow-retro hover:shadow-retro-hover transition-all text-center">
+                        ¡QUIERO MI LUGAR!
+                    </a>
+                </div>
+            </div>
+            <!-- Image Placeholder -->
+            <div class="md:w-1/2 relative">
+                <div class="border-4 border-black bg-white p-2 shadow-retro transform rotate-2">
+                    <img src="academy-old.jpg" alt="Barbero trabajando" class="w-full h-auto grayscale hover:grayscale-0 transition duration-500">
+                    <div class="bg-black text-white text-center font-bold py-2 mt-2 font-display">
+                        CLASES PRESENCIALES
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Methodology Section -->
+    <section id="metodologia" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-display text-retroDark mb-4">NO ES UN CURSO TEORICO</h2>
+            <div class="h-2 w-32 bg-retroOrange mx-auto border-2 border-black"></div>
+            <p class="mt-4 text-xl font-bold text-retroTeal">Es práctica real desde la 2da clase.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white border-4 border-black p-8 shadow-retro hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-16 h-16 bg-retroTeal rounded-full flex items-center justify-center border-4 border-black mb-6 text-white text-2xl">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3 class="text-2xl font-display mb-4">Fundamentos Sólidos</h3>
+                <p class="text-gray-700 font-medium">
+                    Primeras clases teóricas para dominar herramientas, seguridad, anatomía y la "arquitectura" del corte masculino.
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-retroYellow border-4 border-black p-8 shadow-retro transform md:-translate-y-6 hover:-translate-y-8 transition-transform duration-300 relative">
+                <div class="absolute -top-4 -right-4 bg-retroRed text-white px-3 py-1 font-bold border-2 border-black text-xs transform rotate-12">
+                    ¡LO MÁS IMPORTANTE!
+                </div>
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border-4 border-black mb-6 text-retroDark text-2xl">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-2xl font-display mb-4">100% Modelos Reales</h3>
+                <p class="text-black font-bold">
+                    A partir de la Clase 2, te olvidas de la teoría y empiezas a cortar. La barbería se aprende con la máquina en la mano.
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white border-4 border-black p-8 shadow-retro hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-16 h-16 bg-retroOrange rounded-full flex items-center justify-center border-4 border-black mb-6 text-white text-2xl">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="text-2xl font-display mb-4">Mentoría y Certificado</h3>
+                <p class="text-gray-700 font-medium">
+                    Aprende secretos que solo da la experiencia. Incluye certificado de finalización.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="temario" class="py-20 bg-retroDark text-white border-y-4 border-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-display text-retroYellow mb-6">LO QUE VAS A DOMINAR</h2>
+                    <p class="text-lg mb-6 text-gray-300">
+                        Un programa diseñado para que pierdas el miedo y ganes precisión.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-retroTeal mt-1 mr-3 text-xl"></i>
+                            <span class="font-bold">El "Secreto" de la Palanca y los Fades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-retroTeal mt-1 mr-3 text-xl"></i>
+                            <span class="font-bold">Estructura Cuadrada vs. Redonda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-retroTeal mt-1 mr-3 text-xl"></i>
+                            <span class="font-bold">Técnica "Tijera sobre Peine" y "Máquina sobre Peine"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-retroTeal mt-1 mr-3 text-xl"></i>
+                            <span class="font-bold">Marcado de Cerquillos y uso de Navaja</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-retroTeal mt-1 mr-3 text-xl"></i>
+                            <span class="font-bold">Protocolos de Higiene y Atención al Cliente</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <div class="bg-retroTeal p-6 border-4 border-white shadow-[8px_8px_0px_0px_#fff]">
+                        <h3 class="text-2xl font-display mb-4 border-b-2 border-white pb-2">PLAN DE CLASES</h3>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded">
+                                <span class="text-retroYellow font-bold block text-sm">CLASE 1 (TEORIA)</span>
+                                <span class="font-bold text-lg">Fundamentos, Herramientas y Seguridad</span>
+                            </div>
+                            <div class="bg-black/40 p-4 rounded border-l-4 border-retroYellow">
+                                <span class="text-retroYellow font-bold block text-sm">CLASE 2-10 (PRÁCTICA)</span>
+                                <span class="font-bold text-lg">Corte en Modelos Reales (Low, Mid, High Fade)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Details Section -->
+    <section id="inversion" class="py-20 container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-white border-4 border-black shadow-retro overflow-hidden">
+            <div class="bg-retroTeal p-6 border-b-4 border-black text-center">
+                <h2 class="text-3xl md:text-4xl font-display text-white">DETALLES E INVERSIÓN</h2>
+            </div>
+            
+            <div class="p-8 md:p-12">
+                <!-- Info Grid -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-retroLight border-2 border-black flex items-center justify-center mr-4">
+                                <i class="far fa-calendar-alt text-retroOrange text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-500 uppercase">Fechas</h4>
+                                <p class="font-display text-lg">Inicia: 7 de Enero<br>Finaliza: 25 de Febrero</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-retroLight border-2 border-black flex items-center justify-center mr-4">
+                                <i class="far fa-clock text-retroOrange text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-500 uppercase">Horario</h4>
+                                <p class="font-display text-lg">Miércoles 14:30hs - 17:00hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-retroLight border-2 border-black flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-retroOrange text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-500 uppercase">Ubicación</h4>
+                                <p class="font-display text-lg">López y Planes 7015</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-retroLight border-2 border-black flex items-center justify-center mr-4">
+                                <i class="fas fa-toolbox text-retroOrange text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-500 uppercase">Requisitos</h4>
+                                <p class="font-display text-lg leading-tight">Traer Herramientas y Modelos <br><span class="text-xs text-gray-500 font-sans">(Máquina y modelo indispensable)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-retroLight border-4 border-dashed border-gray-400 p-8 text-center relative mb-8">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-retroRed text-white px-6 py-1 font-bold border-2 border-black shadow-sm text-sm uppercase tracking-wider">
+                        PRECIO POR MES
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-8 mt-4">
+                        <div>
+                            <p class="text-gray-500 font-bold mb-1">EFECTIVO</p>
+                            <p class="text-5xl font-display text-retroTeal">$115.000</p>
+                        </div>
+                        <div class="h-12 w-1 bg-gray-300 hidden md:block"></div>
+                        <div>
+                            <p class="text-gray-500 font-bold mb-1">TRANSFERENCIA</p>
+                            <p class="text-4xl font-display text-gray-700">$120.000</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Reservation Notice -->
+                    <div class="mt-6 bg-yellow-100 border-l-4 border-retroOrange text-left p-4">
+                        <p class="font-bold text-retroDark text-sm">
+                            <i class="fas fa-exclamation-circle text-retroOrange mr-2"></i>
+                            RESERVA TU LUGAR: Abonando el 50% antes del 2 de Enero.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="text-center">
+                    <a href="https://api.whatsapp.com/send?phone=543764821251&text=Hola%20Lukas%2C%20quisiera%20reservar%20mi%20lugar%20para%20el%20curso%20de%20barber%C3%ADa" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-4 px-10 border-4 border-black shadow-retro hover:shadow-retro-hover transition-all w-full md:w-auto">
+                        <i class="fab fa-whatsapp mr-2"></i> RESERVAR LUGAR AHORA
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500 font-bold">
+                        * Toca el botón para hablar directo conmigo y asegurar tu cupo.
+                    </p>
+                    <p class="mt-2 text-sm text-retroTeal font-bold uppercase">
+                        Trabajo con grupos pequeños para darte la atención personalizada que mereces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 border-t-8 border-retroTeal text-center">
+        <div class="container mx-auto px-6">
+            <h3 class="font-display text-2xl text-retroYellow mb-4">LUKAS NAHUEL BARBER ACADEMY</h3>
+            <p class="text-gray-400 mb-6 font-bold">Formando a la próxima generación de barberos.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/reel/CzfbX2SOywz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="text-2xl hover:text-retroOrange transition" title="Ver Clases en Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/BellasArtesHairSalon/posts/pfbid0cTZgTs9rvU5r8MM2aexg8VoU4XvcYyp4L8UTibPDYujnUt6Td5yph4Bs4tfYvqeDl" target="_blank" class="text-2xl hover:text-retroOrange transition" title="Ver en Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-retroOrange transition"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="text-xs text-gray-600 font-bold uppercase tracking-widest">
+                &copy; 2025 Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
